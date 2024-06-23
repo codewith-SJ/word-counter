@@ -1,0 +1,130 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #11111b;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.container {
+    background-color: #181825;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #f38ba8;
+}
+
+textarea {
+    width: 100%;
+    max-width: 1100px;
+    height: 300px;
+    padding: 15px;
+    margin-bottom: 30px;
+    border: 2px solid #181825;
+    border-radius: 8px;
+    resize: none;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    transition: border-color 0.3s ease;
+    background-color: #1e1e2e;
+    color: #f0f2f5;
+}
+
+textarea:focus {
+    border-color: #f38ba8;
+    outline: none;
+}
+
+.counters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.counter {
+    flex: 1 1 45%;
+    background-color: #1e1e2e;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin: 10px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    border: 2px solid #f38ba8;
+}
+
+.counter:hover {
+    background-color: #1e1e2e;
+}
+
+.counter p {
+    font-size: 18px;
+    margin: 0 0 10px;
+    font-weight: 500;
+    color: #f38ba8;
+}
+
+.counter span {
+    font-size: 24px;
+    font-weight: 900;
+    color: #f38ba8;
+}
+
+/* Media Queries for Mobile Screens */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    textarea {
+        height: 200px;
+    }
+
+    .counter {
+        flex: 1 1 100%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    textarea {
+        height: 150px;
+        font-size: 14px;
+    }
+
+    .counter p {
+        font-size: 16px;
+    }
+
+    .counter span {
+        font-size: 20px;
+    }
+}
