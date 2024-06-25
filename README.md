@@ -2,6 +2,8 @@
 
 A simple web-based word counter application built with HTML, CSS, and JavaScript. This application allows users to count words, characters, numbers, special characters, and spaces in a given text input.
 
+![Image](/Images/image.png)
+
 ## Features
 
 - **Word Count**: Counts the number of words in the input text.
